@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/india"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#005497"
+            android:overScrollMode="ifContentScrolls"
+            android:text="@string/india"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FF9903"
+            tools:text="INDIA" />
+
+        <ListView
+            android:id="@+id/indianTeam"
+            android:background="#FFFFFF"
+            android:textColor="#FF9903"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:choiceMode="multipleChoice"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/aus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#DFF319"
+            android:text="@string/australia"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#1A9E1F"
+            tools:text="AUSTRALIA" />
+
+        <ListView
+            android:id="@+id/ausTeam"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:choiceMode="multipleChoice"
+            android:visibility="visible"
+            android:background="#FFFFFF"
+            android:textColor="#1A9E1F">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/england"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#8CC0D8"
+            android:text="@string/england"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            tools:text="ENGLAND" />
+
+        <ListView
+            android:id="@+id/engTeam"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:choiceMode="multipleChoice"
+            android:visibility="visible"
+            android:background="#FFFFFF"
+            android:textColor="#000000">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/sa"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#7FD383"
+            android:text="@string/south_africa"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000"
+            tools:text="SOUTH AFRICA" />
+
+        <ListView
+            android:id="@+id/saTeam"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:choiceMode="multipleChoice"
+            android:visibility="visible"
+            android:background="#FFFFFF"
+            android:textColor="#000000">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:onClick="onClick"
+            android:text="DONE"
+            android:background="#050505"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+</ScrollView>
